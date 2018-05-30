@@ -1,0 +1,201 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "retro master",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": [
+                        "cancel"
+                    ]
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": [
+                        "what",
+                        "I am not sure",
+                        "I don't know",
+                        "help",
+                        "help me"
+                    ]
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": [
+                        "exit",
+                        "thanks Alexa",
+                        "thank you Alexa",
+                        "shut up"
+                    ]
+                },
+                {
+                    "name": "DefaultFallbackIntent",
+                    "slots": [
+                        {
+                            "name": "UnrecognisedInput",
+                            "type": "AMAZON.SearchQuery"
+                        }
+                    ],
+                    "samples": [
+                        "anlkn sqwgh",
+                        "jahgnkl vaqgh",
+                        "qfasv",
+                        "swomlss",
+                        "kojiva",
+                        "fainoiq",
+                        "gh {UnrecognisedInput}",
+                        "{UnrecognisedInput} gh",
+                        "l {UnrecognisedInput} ",
+                        "{UnrecognisedInput} s"
+                    ]
+                },
+                {
+                    "name": "SelectTeam",
+                    "slots": [
+                        {
+                            "name": "TeamId",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "number {TeamId}",
+                        "{TeamId}",
+                        "select team {TeamId}",
+                        "team id is {TeamId}"
+                    ]
+                },
+                {
+                    "name": "StartNewMeeting",
+                    "slots": [
+                        {
+                            "name": "MeetingName",
+                            "type": "AMAZON.SearchQuery"
+                        }
+                    ],
+                    "samples": [
+                        "start a new meeting {MeetingName}",
+                        "start new meeting {MeetingName}",
+                        "start new meeting"
+                    ]
+                },
+                {
+                    "name": "ContinueExistMeeting",
+                    "slots": [
+                        {
+                            "name": "MeetingId",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "select meeting {MeetingId}",
+                        "continue meeting {MeetingId}"
+                    ]
+                },
+                {
+                    "name": "QueryTeamId",
+                    "slots": [],
+                    "samples": [
+                        "tell me the current team id",
+                        "tell me the team id"
+                    ]
+                },
+                {
+                    "name": "QueryMeetingId",
+                    "slots": [],
+                    "samples": [
+                        "tell me the current meeting id",
+                        "tell me the meeting id"
+                    ]
+                },
+                {
+                    "name": "AddGoodItem",
+                    "slots": [
+                        {
+                            "name": "RetroItem",
+                            "type": "AMAZON.SearchQuery"
+                        }
+                    ],
+                    "samples": [
+                        "{RetroItem} was quite good",
+                        "{RetroItem} is quite good",
+                        "{RetroItem} was really good",
+                        "{RetroItem} is really good",
+                        "{RetroItem} was fine",
+                        "{RetroItem} is fine",
+                        "{RetroItem} was perfect",
+                        "{RetroItem} is perfect",
+                        "{RetroItem} was awesome",
+                        "{RetroItem} is awesome",
+                        "{RetroItem} was excellent",
+                        "{RetroItem} is excellent",
+                        "{RetroItem} was great",
+                        "{RetroItem} is great",
+                        "{RetroItem} goes well",
+                        "{RetroItem} was good",
+                        "{RetroItem} is good",
+                        "{RetroItem} went well"
+                    ]
+                },
+                {
+                    "name": "AddBadItem",
+                    "slots": [
+                        {
+                            "name": "RetroItem",
+                            "type": "AMAZON.SearchQuery"
+                        }
+                    ],
+                    "samples": [
+                        "{RetroItem} was really bad",
+                        "{RetroItem} is really bad",
+                        "{RetroItem} goes not that well",
+                        "{RetroItem} went not that well",
+                        "{RetroItem} was not that good",
+                        "{RetroItem} is not that good",
+                        "{RetroItem} was not really good",
+                        "{RetroItem} is not really good",
+                        "{RetroItem} was bad",
+                        "{RetroItem} is bad",
+                        "{RetroItem} was no good",
+                        "{RetroItem} is no good",
+                        "{RetroItem} was not good",
+                        "{RetroItem} is not good",
+                        "{RetroItem} goes wrong",
+                        "{RetroItem} went wrong",
+                        "{RetroItem} goes not well",
+                        "{RetroItem} went not well"
+                    ]
+                },
+                {
+                    "name": "DeleteLastAddedItem",
+                    "slots": [],
+                    "samples": [
+                        "drop last note",
+                        "scratch last note",
+                        "delete last note"
+                    ]
+                },
+                {
+                    "name": "ExtendTimer",
+                    "slots": [
+                        {
+                            "name": "ExtendDuration",
+                            "type": "AMAZON.DURATION"
+                        }
+                    ],
+                    "samples": [
+                        "extend timer {ExtendDuration}",
+                        "extend timer for {ExtendDuration}"
+                    ]
+                },
+                {
+                    "name": "FinishRetro",
+                    "slots": [],
+                    "samples": [
+                        "finish retro"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}
